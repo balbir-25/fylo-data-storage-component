@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  min-width: 1340px;
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: hsl(229, 57%, 11%);
+}
+
+/* ==============================START MAIN AREA================================= */
+.site {
+  display: flex;
+  flex-direction: row;
+  padding: 11.5rem;
+  gap: 2rem;
+}
+/* ==============================START IMAGE DIV AREA============================= */
+.image {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 8px 100px 8px 8px;
+  background-color: hsl(228, 56%, 26%);
+  padding-right: 10rem;
+}
+
+.picture {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.pic {
+  padding: 1rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+}
+/* ==============================END IMAGE DIV AREA============================= */
+/* =============================START INFO DIV AREA============================== */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: hsl(228, 56%, 26%);
+  width: 100%;
+}
+
+.info-span {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Raleway";
+  color: hsl(229, 7%, 55%);
+  margin-top: 30px;
+}
+
+b {
+  color: hsl(243, 100%, 93%);
+  font-weight: 700;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.data-span {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Raleway";
+  color: hsl(243, 100%, 93%);
+}
+
+.info-h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Raleway";
+  color: hsl(229, 57%, 11%);
+  padding: 1rem;
+  background-color: hsl(243, 100%, 93%);
+  text-align: center;
+  width: fit-content;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 320px;
+  border-radius: 8px;
+}
+
+.info-h1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right:20px solid hsl(243, 100%, 93%);
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid hsl(243, 100%, 93%);
+  bottom: -20px;
+  right: 0px;
+}
+
+small {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: hsl(229, 7%, 55%);
+}
+
+.empty {
+  height: 20px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.color {
+  height: 20px;
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px;
+  width: 80%;
+}
+
+.dot {
+  height: 20px;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 100%;
+  width: 25px;
+  float: right;
+}
+/* =============================END INFO DIV AREA============================== */
+/* ==============================END MAIN AREA================================= */
+/* =============================START FOOTER  AREA=========================== */
+.foot {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 20px;
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(240, 10%, 16%);
+  margin-top: 50px;
+  float: bottom;
+}
+
+.foot a {
+  text-decoration: none;
+  color: hsl(39, 100%, 56%);
+}
+
+.foot a:hover {
+  color: hsl(300, 69%, 71%);
+}
+/* =============================END FOOTER  AREA=========================== */
+/* =============================START MEDIA QUERY========================== */
+@media screen and (max-width:375px) {
+  body{
+    min-width: 375px;
+    background-image: url(./images/bg-mobile.png);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .site{
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 5.5rem;
+  }
+
+  .info{
+    height: 250px;
+    padding: 1rem;
+  }
+
+  .info-h1{
+    margin-top: 10px;
+    margin-left: 60px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .info-h1:before{
+    display: none;
+  }
+}
+/* =============================END MEDIA QUERY========================== */
